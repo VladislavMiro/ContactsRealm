@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "Contact Information"; ObjectID = "9eE-Sc-TQG"; */
+"9eE-Sc-TQG.text" = "Контактная инфорация";
+
+/* Class = "UILabel"; text = "E-mail: "; ObjectID = "CPW-aK-Tyl"; */
+"CPW-aK-Tyl.text" = "E-mail: ";
+
+/* Class = "UILabel"; text = "Phone: "; ObjectID = "EjN-Hk-MnG"; */
+"EjN-Hk-MnG.text" = "Телефон: ";
+
+/* Class = "UILabel"; text = "Phone: "; ObjectID = "Fuo-DL-Hou"; */
+"Fuo-DL-Hou.text" = "Телефон: ";
+
+/* Class = "UILabel"; text = "Street: "; ObjectID = "M6y-P0-7QR"; */
+"M6y-P0-7QR.text" = "Улица: ";
+
+/* Class = "UILabel"; text = "Street: "; ObjectID = "QER-RS-end"; */
+"QER-RS-end.text" = "Улица: ";
+
+/* Class = "UILabel"; text = "01.01.1990"; ObjectID = "Qxy-lX-D9s"; */
+"Qxy-lX-D9s.text" = "01.01.1990";
+
+/* Class = "UILabel"; text = "City: "; ObjectID = "TqF-Im-hxe"; */
+"TqF-Im-hxe.text" = "Город: ";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "ZLD-cH-o8e"; */
+"ZLD-cH-o8e.text" = "Домашний адрес";
+
+/* Class = "UILabel"; text = "Last Name"; ObjectID = "eYw-Jc-DpY"; */
+"eYw-Jc-DpY.text" = "Фамилия";
+
+/* Class = "UILabel"; text = "Job"; ObjectID = "fdP-R1-KLz"; */
+"fdP-R1-KLz.text" = "Работа";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "g3w-Pe-Sh4"; */
+"g3w-Pe-Sh4.text" = "Имя";
+
+/* Class = "UILabel"; text = "City: "; ObjectID = "ore-in-uUq"; */
+"ore-in-uUq.text" = "Город: ";
+
+/* Class = "UILabel"; text = "Appartment:  "; ObjectID = "sT9-MD-Hob"; */
+"sT9-MD-Hob.text" = "Квартира: ";
+
+/* Class = "UILabel"; text = "Company: "; ObjectID = "v0a-vX-Jlj"; */
+"v0a-vX-Jlj.text" = "Компания: ";
+
+/* Class = "UILabel"; text = "Position: "; ObjectID = "vSw-2m-zGa"; */
+"vSw-2m-zGa.text" = "Должность: ";

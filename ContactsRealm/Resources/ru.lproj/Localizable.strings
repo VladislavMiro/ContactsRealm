@@ -1,0 +1,41 @@
+// MARK: MainView
+
+"Alert_title_MainView" = "Error";
+
+"Alert_Message_MainView_deleteError" = "Не удалось удалить элемент";
+
+// MARK: AddEditView
+
+"New_Contact_title" = "Новый контакт";
+
+"Edit_Contact_title" = "Редактировать";
+
+"Alert_Message_AddEditView_saveError" = "Не удалось сохранить";
+
+"Alert_Message_AddEditView_editError" = "Не удалось сохранить изменения";
+
+"Alert_Message_AddEditView_emptyTextField" = "Не заполнены необходимые поля";
+
+"Alert_title_AddEditView" = "Ошибка";
+
+// MARK: DetailView
+
+"Phone_Number_DetailView" = "Телефон: ";
+
+"Email_DetailView" = "Email: ";
+
+"Home_City_DetailView" = "Город: ";
+
+"Home_Street_DetailView" = "Улица: ";
+
+"Appartment_DetailView" = "Квартира: ";
+
+"Company_Name_DetailView" = "Компания: ";
+
+"Working_Position_DetailView" = "Должность: ";
+
+"Working_Phone_DetailView" = "Телефон: ";
+
+"Working_City_DetailView" = "Город: ";
+
+"Working_Street_DetailView" = "Улица: ";

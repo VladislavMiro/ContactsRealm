@@ -1,0 +1,48 @@
+
+/* Class = "UITextField"; placeholder = "Phone Number +X (XXX) XXX-XXXX"; ObjectID = "00h-YP-ZJb"; */
+"00h-YP-ZJb.placeholder" = "Номер телефона +X (XXX) XXX-XXXX";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "5nm-29-4ZP"; */
+"5nm-29-4ZP.placeholder" = "Фамилия";
+
+/* Class = "UITextField"; placeholder = "E-mail"; ObjectID = "5xk-Ba-2fY"; */
+"5xk-Ba-2fY.placeholder" = "E-mail";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "8Md-mJ-x4f"; */
+"8Md-mJ-x4f.placeholder" = "Имя";
+
+/* Class = "UITextField"; placeholder = "City"; ObjectID = "IRm-05-5IK"; */
+"IRm-05-5IK.placeholder" = "Город";
+
+/* Class = "UITextField"; placeholder = "Date of birth"; ObjectID = "P5B-y1-xvf"; */
+"P5B-y1-xvf.placeholder" = "Дата рождения";
+
+/* Class = "UITextField"; placeholder = "Position"; ObjectID = "Tgx-xC-JG2"; */
+"Tgx-xC-JG2.placeholder" = "Должность";
+
+/* Class = "UITextField"; placeholder = "Appartment"; ObjectID = "WFo-Gf-5bN"; */
+"WFo-Gf-5bN.placeholder" = "Квартира";
+
+/* Class = "UILabel"; text = "Contact Information"; ObjectID = "WZ2-Hi-epc"; */
+"WZ2-Hi-epc.text" = "Контактная информация";
+
+/* Class = "UITextField"; placeholder = "City"; ObjectID = "Znp-wF-1Wa"; */
+"Znp-wF-1Wa.placeholder" = "Город";
+
+/* Class = "UITextField"; placeholder = "Street"; ObjectID = "aMR-Yy-V4U"; */
+"aMR-Yy-V4U.placeholder" = "Улица";
+
+/* Class = "UILabel"; text = "Job"; ObjectID = "cCK-7X-CdM"; */
+"cCK-7X-CdM.text" = "Работа";
+
+/* Class = "UITextField"; placeholder = "Company name"; ObjectID = "pEN-Ff-CVk"; */
+"pEN-Ff-CVk.placeholder" = "Название компании";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "poe-vT-USq"; */
+"poe-vT-USq.text" = "Домашний адрес";
+
+/* Class = "UITextField"; placeholder = "Street"; ObjectID = "vfD-3i-a4F"; */
+"vfD-3i-a4F.placeholder" = "Улица";
+
+/* Class = "UITextField"; placeholder = "Phone number +X (XXX) XXX-XXXX"; ObjectID = "xjg-y7-7aw"; */
+"xjg-y7-7aw.placeholder" = "Номер телефона +X (XXX) XXX-XXXX";

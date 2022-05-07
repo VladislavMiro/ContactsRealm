@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Edit View-->
+        <scene sceneID="8N5-Dq-k1e">
+            <objects>
+                <viewController storyboardIdentifier="AddEditView" id="yP2-RX-2p0" customClass="AddEditView" customModule="ContactsRealm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QDp-ao-5Pu">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="always" translatesAutoresizingMaskIntoConstraints="NO" id="rk9-BF-6qq">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNs-HR-dLB">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="848"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="BPl-6j-umm">
+                                                <rect key="frame" x="15" y="15" width="398" height="123"/>
+                                                <subviews>
+                                                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="xst-Lw-Ib3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="123"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="123" id="4kU-kU-xIu"/>
+                                                            <constraint firstAttribute="width" constant="123" id="Kug-K6-T5E"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="69g-ss-bzw">
+                                                        <rect key="frame" x="138" y="0.0" width="260" height="123"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" verticalHuggingPriority="249" restorationIdentifier="nameTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Md-mJ-x4f">
+                                                                <rect key="frame" x="0.0" y="0.0" width="260" height="37"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="yes" returnKeyType="done" textContentType="name"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="yP2-RX-2p0" id="Qt2-xJ-DRO"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" restorationIdentifier="lastNameTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5nm-29-4ZP">
+                                                                <rect key="frame" x="0.0" y="46" width="260" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="yP2-RX-2p0" id="bme-3t-rr9"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" restorationIdentifier="dateOfBirthTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date of birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P5B-y1-xvf">
+                                                                <rect key="frame" x="0.0" y="89" width="260" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="yP2-RX-2p0" id="Uxx-b2-58H"/>
+                                                                </connections>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fzk-y9-RyK">
+                                                <rect key="frame" x="15" y="153" width="398" height="124.33333333333331"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZ2-Hi-epc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="26.333333333333332"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" restorationIdentifier="phoneNumberTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number +X (XXX) XXX-XXXX" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xjg-y7-7aw">
+                                                        <rect key="frame" x="0.0" y="41.333333333333314" width="398" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="yP2-RX-2p0" id="IJs-hy-FkM"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" tag="5" contentMode="scaleToFill" restorationIdentifier="emailTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5xk-Ba-2fY">
+                                                        <rect key="frame" x="0.0" y="90.333333333333314" width="398" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="yP2-RX-2p0" id="SoB-Ic-azf"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oHd-mT-GXk">
+                                                <rect key="frame" x="15" y="292.33333333333331" width="398" height="152.33333333333331"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poe-vT-USq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="26.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" tag="6" contentMode="scaleToFill" restorationIdentifier="homeCityAddressTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRm-05-5IK">
+                                                        <rect key="frame" x="0.0" y="34.333333333333371" width="398" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="yP2-RX-2p0" id="H2P-VA-F7O"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" tag="7" contentMode="scaleToFill" restorationIdentifier="homeStreetAddressTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Street" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vfD-3i-a4F">
+                                                        <rect key="frame" x="0.0" y="76.333333333333371" width="398" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="yP2-RX-2p0" id="exP-Up-E3H"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" tag="8" contentMode="scaleToFill" restorationIdentifier="homeAppartmentTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Appartment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WFo-Gf-5bN">
+                                                        <rect key="frame" x="0.0" y="118.33333333333337" width="398" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="yP2-RX-2p0" id="0jD-3f-XyJ"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cn8-df-Y0U">
+                                                <rect key="frame" x="15" y="459.66666666666657" width="398" height="236.33333333333331"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCK-7X-CdM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="26.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" tag="9" contentMode="scaleToFill" restorationIdentifier="companyNameTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Company name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pEN-Ff-CVk">
+                                                        <rect key="frame" x="0.0" y="34.333333333333371" width="398" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="organization"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="yP2-RX-2p0" id="uts-eR-TvZ"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" tag="10" contentMode="scaleToFill" restorationIdentifier="positionTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Position" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tgx-xC-JG2">
+                                                        <rect key="frame" x="0.0" y="76.333333333333371" width="398" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="yP2-RX-2p0" id="61w-KQ-NSt"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" tag="11" contentMode="scaleToFill" restorationIdentifier="workPhoneNumberTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number +X (XXX) XXX-XXXX" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="00h-YP-ZJb">
+                                                        <rect key="frame" x="0.0" y="118.33333333333337" width="398" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" textContentType="tel"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="yP2-RX-2p0" id="nqN-Br-FeC"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" tag="12" contentMode="scaleToFill" restorationIdentifier="workCityAddressTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Znp-wF-1Wa">
+                                                        <rect key="frame" x="0.0" y="160.33333333333337" width="398" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="address-level2"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="yP2-RX-2p0" id="tun-eI-ws9"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" tag="13" contentMode="scaleToFill" restorationIdentifier="workStreetAddressTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Street" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aMR-Yy-V4U">
+                                                        <rect key="frame" x="0.0" y="202.33333333333337" width="398" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="street-address"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="yP2-RX-2p0" id="i7f-ex-Lbj"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="BPl-6j-umm" firstAttribute="leading" secondItem="zNs-HR-dLB" secondAttribute="leading" constant="15.000000000000014" id="16X-X4-aTn"/>
+                                            <constraint firstAttribute="trailing" secondItem="BPl-6j-umm" secondAttribute="trailing" constant="15" id="82X-Na-qna"/>
+                                            <constraint firstItem="fzk-y9-RyK" firstAttribute="leading" secondItem="zNs-HR-dLB" secondAttribute="leading" constant="15" id="9GL-X8-yLG"/>
+                                            <constraint firstAttribute="trailing" secondItem="cn8-df-Y0U" secondAttribute="trailing" constant="15" id="C9B-S6-ImD"/>
+                                            <constraint firstAttribute="height" constant="848" id="E6k-jA-0MX"/>
+                                            <constraint firstItem="fzk-y9-RyK" firstAttribute="top" secondItem="BPl-6j-umm" secondAttribute="bottom" constant="15" id="M6H-q0-pHY"/>
+                                            <constraint firstItem="cn8-df-Y0U" firstAttribute="leading" secondItem="zNs-HR-dLB" secondAttribute="leading" constant="15" id="Vrb-Sw-qJu"/>
+                                            <constraint firstItem="oHd-mT-GXk" firstAttribute="leading" secondItem="zNs-HR-dLB" secondAttribute="leading" constant="14.999999999999993" id="Wze-QE-Rjs"/>
+                                            <constraint firstItem="BPl-6j-umm" firstAttribute="top" secondItem="zNs-HR-dLB" secondAttribute="top" constant="15" id="dcS-sK-1yd"/>
+                                            <constraint firstItem="cn8-df-Y0U" firstAttribute="top" secondItem="oHd-mT-GXk" secondAttribute="bottom" constant="15" id="hNH-Z8-MHZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="fzk-y9-RyK" secondAttribute="trailing" constant="15" id="pZo-f8-jX6"/>
+                                            <constraint firstAttribute="trailing" secondItem="oHd-mT-GXk" secondAttribute="trailing" constant="15" id="ruu-Ir-fTx"/>
+                                            <constraint firstItem="oHd-mT-GXk" firstAttribute="top" secondItem="fzk-y9-RyK" secondAttribute="bottom" constant="15.000000000000057" id="zCf-rM-Ug8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zNs-HR-dLB" firstAttribute="leading" secondItem="rk9-BF-6qq" secondAttribute="leading" id="0Td-cI-Wwa"/>
+                                    <constraint firstItem="zNs-HR-dLB" firstAttribute="top" secondItem="rk9-BF-6qq" secondAttribute="top" id="NPN-Qd-FEj"/>
+                                    <constraint firstAttribute="trailing" secondItem="zNs-HR-dLB" secondAttribute="trailing" id="noA-A0-C0F"/>
+                                    <constraint firstAttribute="bottom" secondItem="zNs-HR-dLB" secondAttribute="bottom" id="vmp-fK-VkN"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qdo-Cs-6rU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rk9-BF-6qq" firstAttribute="leading" secondItem="Qdo-Cs-6rU" secondAttribute="leading" id="5cp-xS-ZHJ"/>
+                            <constraint firstItem="zNs-HR-dLB" firstAttribute="width" secondItem="QDp-ao-5Pu" secondAttribute="width" id="6hU-tV-oU1"/>
+                            <constraint firstItem="rk9-BF-6qq" firstAttribute="top" secondItem="Qdo-Cs-6rU" secondAttribute="top" id="QHz-ai-Y7w"/>
+                            <constraint firstItem="rk9-BF-6qq" firstAttribute="bottom" secondItem="Qdo-Cs-6rU" secondAttribute="bottom" id="Wre-49-n0S"/>
+                            <constraint firstItem="rk9-BF-6qq" firstAttribute="trailing" secondItem="Qdo-Cs-6rU" secondAttribute="trailing" id="cCy-zt-dzb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="DI2-K6-vcV">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="d8Q-iW-07l">
+                            <connections>
+                                <action selector="saveButtonAction:" destination="yP2-RX-2p0" id="58G-vt-RR5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="datePicker" destination="OPb-iW-epc" id="gz1-JG-kOy"/>
+                        <outlet property="imageView" destination="xst-Lw-Ib3" id="E4B-xs-fiB"/>
+                        <outlet property="scrollView" destination="rk9-BF-6qq" id="Hbx-BD-mJf"/>
+                        <outlet property="toolBar" destination="BCn-G0-zQj" id="iJ4-Ce-NyZ"/>
+                        <outletCollection property="textFields" destination="8Md-mJ-x4f" collectionClass="NSMutableArray" id="gIw-q0-AwY"/>
+                        <outletCollection property="textFields" destination="5nm-29-4ZP" collectionClass="NSMutableArray" id="Bnm-5F-rq3"/>
+                        <outletCollection property="textFields" destination="P5B-y1-xvf" collectionClass="NSMutableArray" id="EC8-T7-Z3C"/>
+                        <outletCollection property="textFields" destination="xjg-y7-7aw" collectionClass="NSMutableArray" id="ccl-SJ-Nlt"/>
+                        <outletCollection property="textFields" destination="5xk-Ba-2fY" collectionClass="NSMutableArray" id="0D0-if-1e7"/>
+                        <outletCollection property="textFields" destination="IRm-05-5IK" collectionClass="NSMutableArray" id="aDi-KF-XUp"/>
+                        <outletCollection property="textFields" destination="vfD-3i-a4F" collectionClass="NSMutableArray" id="FT1-WY-Sqe"/>
+                        <outletCollection property="textFields" destination="WFo-Gf-5bN" collectionClass="NSMutableArray" id="GIo-Tf-aZq"/>
+                        <outletCollection property="textFields" destination="pEN-Ff-CVk" collectionClass="NSMutableArray" id="7AS-FC-Fmc"/>
+                        <outletCollection property="textFields" destination="Tgx-xC-JG2" collectionClass="NSMutableArray" id="rE2-Rt-3zG"/>
+                        <outletCollection property="textFields" destination="00h-YP-ZJb" collectionClass="NSMutableArray" id="nS7-hi-REl"/>
+                        <outletCollection property="textFields" destination="Znp-wF-1Wa" collectionClass="NSMutableArray" id="tgu-Wc-Py4"/>
+                        <outletCollection property="textFields" destination="aMR-Yy-V4U" collectionClass="NSMutableArray" id="dx5-lw-Zdm"/>
+                        <outletCollection property="textFields" destination="8Md-mJ-x4f" collectionClass="NSMutableArray" id="RBW-gG-riQ"/>
+                        <outletCollection property="textFields" destination="5nm-29-4ZP" collectionClass="NSMutableArray" id="kCa-3L-q9m"/>
+                        <outletCollection property="textFields" destination="xjg-y7-7aw" collectionClass="NSMutableArray" id="yOk-ee-VrM"/>
+                        <outletCollection property="textFields" destination="5xk-Ba-2fY" collectionClass="NSMutableArray" id="Px1-oN-bsY"/>
+                        <outletCollection property="textFields" destination="IRm-05-5IK" collectionClass="NSMutableArray" id="mOM-7p-x6b"/>
+                        <outletCollection property="textFields" destination="vfD-3i-a4F" collectionClass="NSMutableArray" id="a4c-BG-IDF"/>
+                        <outletCollection property="textFields" destination="WFo-Gf-5bN" collectionClass="NSMutableArray" id="R7i-28-IqM"/>
+                        <outletCollection property="textFields" destination="pEN-Ff-CVk" collectionClass="NSMutableArray" id="gNh-EX-5bg"/>
+                        <outletCollection property="textFields" destination="Tgx-xC-JG2" collectionClass="NSMutableArray" id="4KI-kG-ES0"/>
+                        <outletCollection property="textFields" destination="00h-YP-ZJb" collectionClass="NSMutableArray" id="iSD-lr-Qml"/>
+                        <outletCollection property="textFields" destination="Znp-wF-1Wa" collectionClass="NSMutableArray" id="DlT-Df-e3g"/>
+                        <outletCollection property="textFields" destination="aMR-Yy-V4U" collectionClass="NSMutableArray" id="fFp-ym-ltQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W4N-RZ-SSP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" id="OPb-iW-epc">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="162"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                </datePicker>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" id="BCn-G0-zQj">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="j02-su-NBh"/>
+                        <barButtonItem style="done" systemItem="done" id="1Eu-PC-K0Z">
+                            <connections>
+                                <action selector="toolBarDoneButton:" destination="yP2-RX-2p0" id="a20-9k-gU9"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </objects>
+            <point key="canvasLocation" x="838.31775700934577" y="118.5745140388769"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="defaultPhoto" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
