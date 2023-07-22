@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol MainViewProtocol: class {
+protocol MainViewProtocol: AnyObject {
     
     var interactor: MainViewInteractorProtocol! { get set }
     var router: MainViewRouterProtocol! { get set }

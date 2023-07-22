@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-protocol AddEditViewProtocol: class {
+protocol AddEditViewProtocol: AnyObject {
     
     var router: AddEditViewRouterProtocol! { get set }
     var interactor: AddEditViewInteractorProtocol! { get set }

@@ -1,6 +1,6 @@
 import Foundation
 
-protocol DetailViewProtocol: class {
+protocol DetailViewProtocol: AnyObject {
     
     var interactor: DetailViewInteractorProtocol! { get set }
     var router: DetailViewRouterProtocol! { get set }
